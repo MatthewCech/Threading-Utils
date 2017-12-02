@@ -16,17 +16,18 @@
 // Application entry point
 int main(int argc, char** argv)
 {
-  // Timing start
+  // Timing start ///////////
   RUtils::Timekeeper t;
   t.StartFrame();   
-  
-  // <Some code that does things>
-  for (int i{ 0 }; i < 10; ++i)
-    std::cout << "I'm printed line " << i + 1 << "!" << '\n';
+  ///////////////////////////
 
-  // Timing end
+
+
+
+  // Timing end /////////////
   t.EndFrame(); 
-  std::cout << "Printing all that took: " << t.GetLastTimeMS() << "ms\n";
+  std::cout << "Took " << t.GetLastTimeMS() << "ms\n";
+  ///////////////////////////
 
   // Normal termination
   return 0;
